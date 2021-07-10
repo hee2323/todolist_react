@@ -11,18 +11,18 @@ const TodoListBlock = styled.div`
 `;
 
 function TodoList() {
-    const todos = useTodoState();
+    // const todos = useTodoState();
 
     return (
         <TodoListBlock>
-        {todos.map(todo => (
-          <TodoItem
-            key={todo.id}
-            id={todo.id}
-            text={todo.text}
-            done={todo.done}
-          />
-        ))}
+        {/*{todos.map(todo => (*/}
+        {/*  <TodoItem*/}
+        {/*    key={todo.id}*/}
+        {/*    id={todo.id}*/}
+        {/*    contents={todo.contents}*/}
+        {/*    done={todo.done}*/}
+        {/*  />*/}
+        {/*))}*/}
       </TodoListBlock>
     );
 }

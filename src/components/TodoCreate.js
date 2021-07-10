@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { MdAdd } from 'react-icons/md';
-import { useTodoDispatch, useTodoNextId } from '../TodoContext';
+import { useTodoDispatch, useTodoNextId } from '../App';
 
 const CircleButton = styled.button`
   background: #38d9a9;
@@ -90,7 +90,7 @@ function TodoCreate() {
           type: 'CREATE',
           todo: {
               id: nextId.current,
-              text: value,
+              contents: value,
               done: false
           }
       });
